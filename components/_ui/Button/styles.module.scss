@@ -1,0 +1,15 @@
+.buttonStyle {
+  @apply flex justify-center rounded-full border whitespace-nowrap px-24 py-12 text-16 font-semibold;
+
+  &.white {
+    @apply bg-white text-black  border-black;
+  }
+
+  &.dark {
+    @apply bg-black text-white border-black;
+  }
+
+  &.gary {
+    @apply bg-black text-white border-white;
+  }
+}

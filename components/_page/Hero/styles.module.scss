@@ -6,10 +6,22 @@
   }
 
   .content {
-    @apply absolute inset-0 pt-150;
+    @apply absolute inset-0 pt-180 pb-110 flex flex-col justify-between;
 
     .heroTitle {
       @apply text-80 uppercase leading-80 max-w-950;
+
+      .underLine {
+        @apply border-b border-black;
+      }
+    }
+
+    .main {
+      @apply space-y-18;
+
+      .heroDescription {
+        @apply text-16 w-280;
+      }
     }
   }
 }

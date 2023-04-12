@@ -3,12 +3,10 @@
 const rem = (num) => ({ [num]: `${num / 16}rem` });
 
 const colors = {
-  primary: "#fdbe33",
-  secondary: "#030f27",
+  darkBlue: "#09182D",
+  whiteGray: "#F4F4F4",
   twitter: "#00acee",
-  facebook: "#3b5998",
-  instagram: "#0e76a8",
-  linkedinIn: "#3f729b",
+  redOrange: "#E1473D",
 };
 
 const typography = {
