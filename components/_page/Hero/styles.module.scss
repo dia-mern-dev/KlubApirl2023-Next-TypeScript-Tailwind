@@ -27,5 +27,17 @@
 
   .bottomBar {
     @apply absolute bottom-0 pt-22 pb-18 bg-white w-full;
+
+    .barWrapper {
+      @apply flex space-x-10;
+
+      .text {
+        @apply text-16;
+      }
+
+      .icon {
+        @apply text-redOrange w-18 h-18;
+      }
+    }
   }
 }

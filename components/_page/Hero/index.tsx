@@ -5,6 +5,8 @@ import styles from "./styles.module.scss";
 import background from "../../../public/images/hero_bg.png";
 import Container from "../../_ui/Container";
 import Button from "../../_ui/Button";
+import Icon from "../../_ui/Icon";
+import { bottomBarTextList } from "../../../utils/constants";
 
 const Hero: React.FC = () => {
   return (
@@ -23,7 +25,18 @@ const Hero: React.FC = () => {
           <Button>OUR INVESTMENT</Button>
         </div>
       </Container>
-      <div className={styles.bottomBar}>sdfsdf</div>
+      <div className={styles.bottomBar}>
+        <Container className={styles.barWrapper}>
+          {bottomBarTextList.map((item) => (
+            <div key={item.label} className="flex items-center space-x-8">
+              <p className={styles.text}>{item.label}</p>
+              <div className={styles.icon}>
+                <Icon name="ArrowRight" />
+              </div>
+            </div>
+          ))}
+        </Container>
+      </div>
     </div>
   );
 };
