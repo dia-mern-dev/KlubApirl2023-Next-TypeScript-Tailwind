@@ -1,0 +1,7 @@
+.wrapper {
+  @apply absolute w-full z-20;
+
+  .content {
+    @apply flex justify-between items-center pt-20;
+  }
+}
