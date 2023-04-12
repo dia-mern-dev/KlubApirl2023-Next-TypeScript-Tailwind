@@ -1,7 +1,15 @@
 .wrapper {
-  @apply h-screen;
+  @apply h-screen relative;
 
   .background {
-    @apply h-screen w-full;
+    @apply h-screen w-full object-cover;
+  }
+
+  .content {
+    @apply absolute inset-0 pt-150;
+
+    .heroTitle {
+      @apply text-80 uppercase leading-80 max-w-950;
+    }
   }
 }
