@@ -1,12 +1,12 @@
 .wrapper {
-  @apply h-screen relative;
+  @apply h-screen relative flex overflow-hidden;
 
   .background {
     @apply h-screen w-full object-cover;
   }
 
   .content {
-    @apply absolute inset-0 pt-180 pb-110 flex flex-col justify-between;
+    @apply absolute inset-0 pt-180 flex flex-col justify-between h-screen;
 
     .heroTitle {
       @apply text-80 uppercase leading-80 max-w-950;
@@ -17,11 +17,15 @@
     }
 
     .main {
-      @apply space-y-18;
+      @apply space-y-18 pb-110;
 
       .heroDescription {
         @apply text-16 w-280;
       }
     }
+  }
+
+  .bottomBar {
+    @apply absolute bottom-0 pt-22 pb-18 bg-white w-full;
   }
 }

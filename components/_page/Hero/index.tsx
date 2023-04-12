@@ -23,6 +23,7 @@ const Hero: React.FC = () => {
           <Button>OUR INVESTMENT</Button>
         </div>
       </Container>
+      <div className={styles.bottomBar}>sdfsdf</div>
     </div>
   );
 };
