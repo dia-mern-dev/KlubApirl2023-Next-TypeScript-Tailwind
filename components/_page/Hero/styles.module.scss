@@ -6,10 +6,26 @@
   }
 
   .content {
-    @apply absolute inset-0 pt-180 flex flex-col justify-between h-screen;
+    @apply absolute inset-0 pt-150 flex flex-col justify-between h-screen;
+
+    @screen desktop {
+      @apply pt-180;
+    }
 
     .heroTitle {
-      @apply text-80 uppercase leading-80 max-w-950;
+      @apply uppercase text-30 leading-32 max-w-300;
+
+      @screen tablet {
+        @apply text-40 leading-40 max-w-500;
+      }
+
+      @screen desktop {
+        @apply text-50 leading-50 max-w-650;
+      }
+
+      @screen large {
+        @apply text-80 leading-80 max-w-950;
+      }
 
       .underLine {
         @apply border-b border-black;
@@ -32,7 +48,7 @@
       @apply flex space-x-10;
 
       .text {
-        @apply text-16;
+        @apply text-16 whitespace-nowrap;
       }
 
       .icon {

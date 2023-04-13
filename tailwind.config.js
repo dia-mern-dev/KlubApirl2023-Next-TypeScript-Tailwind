@@ -261,7 +261,7 @@ module.exports = {
       phoneLandscape: "480px",
       phone: "640px",
       tablet: "768px",
-      desktop: "1024px",
+      desktop: "1025px",
       laptop: "1280px",
       large: "1440px",
       xxl: "1600px",
